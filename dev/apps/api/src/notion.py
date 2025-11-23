@@ -2346,6 +2346,12 @@ class NotionAgent:
             "Take Aways": {
                 "rich_text": {}
             },
+            "AI summary": {
+                "rich_text": {}
+            },
+            "URL": {
+                "url": {}
+            }
         }
 
         # Create the new database under the specified page
