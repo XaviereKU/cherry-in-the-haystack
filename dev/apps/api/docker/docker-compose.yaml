@@ -405,7 +405,7 @@ services:
     command: --mysql-native-password=ON
     restart: always
     ports:
-      - "${BOT_SVC_BIND_IP:-127.0.0.1}:3306:3306"
+      - "${BOT_SVC_BIND_IP:-127.0.0.1}:3307:3306"
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s

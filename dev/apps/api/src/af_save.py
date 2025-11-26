@@ -32,7 +32,7 @@ parser.add_argument("--topics-top-k", help="pick top-k topics to push",
 parser.add_argument("--categories-top-k", help="pick top-k categories to push",
                     default=3)
 parser.add_argument("--dedup", help="whether dedup item",
-                    default=True)
+                    default=False)
 parser.add_argument("--min-score-to-rank",
                     help="The minimum relevant score to start ranking",
                     default=4)

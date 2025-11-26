@@ -155,8 +155,8 @@ class OperatorRSS(OperatorBase):
         
         rss_list = [
         {
-            "name": "Reddit MachineLearning Feed",  # 원하는 이름
-            "url": "https://www.reddit.com/r/machinelearningnews/.rss"  # 실제 RSS URL
+            "name": "Elvis",  # 원하는 이름
+            "url": "https://nlp.elvissaravia.com/feed"  # 실제 RSS URL
         },
         ]
 
@@ -456,11 +456,11 @@ class OperatorRSS(OperatorBase):
                 op_notion = OperatorNotion()
 
                 # Get the latest toread database id from index db
-                # db_index_id = op_notion.get_index_toread_dbid()
+                db_index_id = op_notion.get_index_toread_dbid()
 
-                # database_id = utils.get_notion_database_id_toread(
-                #     notion_agent, db_index_id)
-                database_id = "2a6f199edf7c809eac47c77106b34c38"
+                database_id = utils.get_notion_database_id_toread(
+                    notion_agent, db_index_id)
+                # database_id = "2b4584a26969818aa49aea1a61019670"
                 
                 print(f"Latest ToRead database id: {database_id}")
 
